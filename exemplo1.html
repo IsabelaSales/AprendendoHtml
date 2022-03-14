@@ -12,7 +12,14 @@
         function clickNoBotao(){
             alert("Olá Mundo!");
         }
+        function atualizacaoTexto(){
+            let input = document.getElementById("meuinput");
+            let p = document.getElementById("para");
 
+            p.textContent = input.value;
+
+            console.log("Oi")
+        }
     </script>
 </head>
 
@@ -20,14 +27,14 @@
     <div>
         <h1>Título</h1>
         <h2>Título</h2>
-        <p>Qualquer Texto</p>
+        <p id="para">Qualquer Texto</p>
         <span> Informação</span>
     </div>
     <img src="dev.png" />
     <a href="https://google.com.br">link para o goolge</a>
 
     <div>
-        <input id= "meuinput "type="text" \>
+        <input id="meuinput" type="number" oninput="atualizacaoTexto()" />
         <select>
             <option> Opção-1</option>
             <option> Opção-2</option>
